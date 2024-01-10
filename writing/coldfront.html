@@ -2,56 +2,22 @@
 <HTML lang="en-US">
     <HEAD>
         <TITLE>Jim's Computers! - coldfront notes</TITLE>
-        <STYLE>
-            H1 {text-align: center; color: white;}
-            H2 {text-align: center; color:white;}
-            P {text-align: center; color: #C8FF73;}
-            BODY {
-                background-image: url("../images/textured-flyingcats.jpg"); 
-                text-align: center;
-                margin-left: auto; 
-                margin-right: auto;
-            }
-            TABLE, TH, TD {
-                margin-left: auto; 
-                margin-right: auto;
-                border: 2px;
-                border-style: ridge;
-                background-color: #aa73ff;
-                width: 80%;
-                font-family:"Courier New", Courier, monospace; 
-                font-size:12px;
-            }
-            
-        </STYLE>
     </HEAD>
 
     <BODY>
+        <a href="http://jimscomputers.net/academia.html"><< BACK</a>
         <H1>Jim's Computers</H1>
-        <TABLE>
-            <TR><TH>
-                <div style="text-align: center;">
-                    <a href="http://jimscomputers.net">| Home |</a>
-                    <a href="http://jimscomputers.net/academia.html">| Academia |</a>
-                    <a href="http://jimscomputers.net/webrevival.html">| Web Revival |</a>
-                    <a href="http://jimscomputers.net/museum.html">| Computers |</a>
-                </div>
-            </TH></TR>
-            <div style="text-align: center;">
-                <TR><TH>
-                    <H2>Coldfront Installation Notes</H2>
-                    <HR width="200">
-                </TH></TR>
-                <TR><TH>
-                    <div style="text-align: center;">
-                        <a href="https://vanderbran.github.io/"><< PREV </a>
-                        <a href="http://jimscomputers.net/ttuwebring.html">| TnTech DIY WebRing |</a>
-                        <a href="https://vanderbran.github.io/"> NEXT >></a>
-                    </div>
-                </TH></TR>
-        </TABLE>
-            <P style="font-size:8px; color: white;">Last Updated: 11/25/2023 16:06 CST</P>
-        </div>
+        <br>
+        <H2>Coldfront Installation Notes</H2>
+        <P>Jan 10th, 2024</P>
+        <HR>
+        <H3>Intro</H3>
+        <P>
+            This is a small set of install notes for the resource allocation management system <a href="https://github.com/ubccr/coldfront" target="_blank">ColdFront</a>. In this, I walk through the <a href="https://coldfront.readthedocs.io/en/latest/deploy/" target="_blank">ColdFront Deployment docs</a>, and address some pitfalls and hangups that I experience while setting the system up on a small HPC system for my University. Lastly I also describe configuration for the SAML SSO plugin I wrote for ColdFront, and how you should configure your IDP as far as what claims to send and how to format them for the plugin.
+            <br>
+            <b>NOTE:</b> These installation notes are pretty specific towards the HPC configuration they were made for: An OpenHPC cluster running their versions of Slurm on Rocky 8, with Microsoft EntreID as the IDP.
+        </P>
+        <H3></H3>
     </BODY>
 
 </HTML>
